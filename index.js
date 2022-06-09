@@ -52,7 +52,10 @@ async function main(){
 
  
  if(data===undefined){
+
+    document.querySelector("#showmovie").append("ERROR !");
      return false;
+    
  }
  appendMovies(data)
 
