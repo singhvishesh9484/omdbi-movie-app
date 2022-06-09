@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #query{
+        width:200px;
+        
+    }
+    #showmovie{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        gap:20px;
+    }
+
+
+</style>
+<body>
+    <h1>Omdbi movie app</h1>
+
+    <input oninput="debounce(main,1000)" type="text" id="query"/>
+    <div id="movies"></div>
+
+    <div id="showmovie"></div>
+</body>
+</html>
+
+<script src="index.js"></script>
